@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DIUride</string>
+
+
+    <string name="regTv">
+         Sign Up with Your <br> Varsity Email </br></string>
+    <string name="logintv">
+        Hello There! <br><b>Log In to Your Account.</b></br></string>
+</resources>

@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DIUride" parent="Theme.Material3.DayNight.NoActionBar"
+        >
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#11BA7F</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+    </style>
+    <style name="Theme.MyApp" parent="Theme.AppCompat.DayNight.NoActionBar"/>
+
+    <style name="Theme.DIUride" parent="Base.Theme.DIUride" />
+</resources>
