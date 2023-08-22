@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+
+    <item
+        android:iconTint="@color/white"
+        android:id="@+id/rHistory"
+        android:title="History"
+        android:icon="@drawable/profileicon"
+
+
+        >
+
+
+    </item>
+
+
+
+    <item
+        android:iconTint="@color/white"
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/settingicon"
+
+
+        >
+
+
+    </item>
+    <item
+        android:id="@+id/aboutUs"
+        android:title="About Us"
+        android:icon="@drawable/baseline_info_24"
+
+
+        >
+
+
+    </item>
+    <item
+        android:iconTint="@color/white"
+        android:id="@+id/logout"
+        android:title="Log out"
+        android:icon="@drawable/logouticon_24"
+
+
+        >
+
+
+    </item>
+
+</menu>

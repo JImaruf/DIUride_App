@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+
+
+        android:title="Map"
+        android:id="@+id/navhome"
+
+        android:icon="@drawable/baseline_location_on_24"
+
+
+
+        >
+
+
+    </item>
+    <item
+        android:id="@+id/navnotification"
+        android:iconTint="@color/white"
+        android:title="Notification"
+        android:icon="@drawable/notification"
+
+
+        >
+
+
+    </item>
+
+
+
+    <item
+        android:iconTint="@color/white"
+        android:id="@+id/rList"
+        android:title="Ride List"
+        android:icon="@drawable/ridelisticon"
+
+
+        >
+
+
+    </item>
+
+
+
+</menu>

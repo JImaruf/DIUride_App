@@ -5,6 +5,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Layout;
 import android.view.WindowManager;
@@ -21,6 +22,8 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().setStatusBarColor(ContextCompat.getColor(SplashScreen.this,R.color.maincolor));
         setContentView(R.layout.activity_splash_screen);
+        getWindow().setNavigationBarColor(Color.parseColor("#52C498"));
+        getWindow().setStatusBarColor(Color.parseColor("#52C498"));
 
         textLayout = findViewById(R.id.textfield);
 

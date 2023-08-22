@@ -8,5 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="maincolor">#52C498</color>
+    <color name="lightgrey">#F2F2F2 </color>
+    <color name="accent_color">#FFD700 </color>
+    <color name="mainactivityback">#FEFEFE</color>
 
 </resources>

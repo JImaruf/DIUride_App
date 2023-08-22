@@ -4,4 +4,181 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    android:background="@color/mainactivityback"
+    tools:context=".MainActivity">
+
+
+
+
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/navbarid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:id="@+id/toolbar"
+                android:padding="5dp"
+                >
+
+
+                <ImageView
+
+
+                    android:id="@+id/navmenubtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_bx_bx_menu_alt_left" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/diulogo"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/rDp"
+                    app:layout_constraintStart_toEndOf="@+id/navmenubtn"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    app:riv_mutate_background="true"
+                    app:riv_oval="true"
+                    android:id="@+id/rDp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@color/maincolor"
+                    android:padding="2dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/maruf"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/profilesvg" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+            <ImageView
+                android:id="@+id/liner"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+
+                android:layout_marginTop="4dp"
+
+                android:background="@color/maincolor"
+
+
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical"
+                >
+
+                <FrameLayout
+                    android:id="@+id/fragmentcontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+        <com.google.android.material.navigation.NavigationView
+
+            android:id="@+id/drawernavbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/navimage"
+            android:onClick="navbtn"
+
+            app:menu="@menu/drawernavmenu">
+
+            <!--       <LinearLayout-->
+            <!--               android:layout_width="match_parent"-->
+            <!--               android:layout_height="80dp"-->
+            <!--               android:layout_gravity="bottom"-->
+            <!--               android:orientation="vertical"-->
+            <!--               >-->
+            <!--               <TextView-->
+            <!--                   android:layout_width="match_parent"-->
+            <!--                   android:layout_height="wrap_content"-->
+            <!--                   android:text="About Us"-->
+            <!--                   android:textStyle="italic"-->
+            <!--                   android:layout_marginLeft="20dp"-->
+
+            <!--                   android:textSize="16sp"-->
+            <!--                   android:textColor="@color/black"-->
+            <!--/>-->
+            <!--               <TextView-->
+            <!--                   android:layout_width="match_parent"-->
+            <!--                   android:layout_height="wrap_content"-->
+            <!--                   android:text="For more details"-->
+            <!--                   android:textStyle="italic"-->
+            <!--                   android:layout_marginLeft="20dp"-->
+            <!--                   android:layout_marginTop="10dp"-->
+
+            <!--                   android:textSize="16sp"-->
+            <!--                   android:textColor="@color/black"-->
+            <!--                   />-->
+
+            <!--           </LinearLayout>-->
+
+
+        </com.google.android.material.navigation.NavigationView>
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/navbarid"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:backgroundColor="@color/maincolor"
+        app:sideMargins="0dp"
+        app:itemPadding="10dp"
+        app:iconSize="25dp"
+        app:indicatorColor="#358058"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/nav_menu" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

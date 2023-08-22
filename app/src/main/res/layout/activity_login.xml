@@ -53,12 +53,12 @@
         <ImageView
             android:id="@+id/signuplogo"
             android:layout_width="150dp"
-            android:layout_height="300dp"
+            android:layout_height="280dp"
             android:src="@drawable/loginicon"
             app:layout_constraintBottom_toTopOf="@+id/textView7"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+            app:layout_constraintTop_toBottomOf="@+id/backklinearLayout" />
 
 
         <TextView
@@ -81,12 +81,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginBottom="24dp"
             android:orientation="vertical"
-            app:layout_constraintBottom_toTopOf="@+id/calculation"
+            app:layout_constraintBottom_toTopOf="@+id/loginBTN"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7">
 
 
             <soup.neumorphism.NeumorphCardView
@@ -138,11 +139,72 @@
             </soup.neumorphism.NeumorphCardView>
 
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginStart="20dp"
+                android:textColor="#063507"
+                android:text="Log in as:"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/usertypebutton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+
+
+
+
+
+
+
+                >
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:padding="10dp"
+                        android:id="@+id/passengerRbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/personlogo"
+                        android:onClick="onRadioButtonClicked"
+                        android:textSize="16sp"
+                        android:text="Passenger" />
+
+                    <RadioButton
+                        android:padding="10dp"
+                        android:id="@+id/riderRbtn"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_directions_bike_24"
+
+                        android:onClick="onRadioButtonClicked"
+                       android:textSize="16sp"
+                        android:text="Rider" />
+                </RadioGroup>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
         </LinearLayout>
 
 
         <soup.neumorphism.NeumorphButton
-            android:id="@+id/calculation"
+            android:id="@+id/loginBTN"
             android:layout_width="200dp"
 
 

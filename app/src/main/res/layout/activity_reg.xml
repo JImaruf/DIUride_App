@@ -49,13 +49,13 @@
 
             <ImageView
                 android:id="@+id/signuplogo"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:src="@drawable/signuppic"
                 app:layout_constraintBottom_toTopOf="@+id/textView7"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+                app:layout_constraintTop_toBottomOf="@+id/backlinearLayout" />
 
 
             <TextView
@@ -140,7 +140,7 @@
                     app:neumorph_strokeColor="@color/black">
 
                     <EditText
-                        android:id="@+id/name"
+                        android:id="@+id/nameet"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/editback"
@@ -211,7 +211,7 @@
 
 
             <soup.neumorphism.NeumorphButton
-                android:id="@+id/calculation"
+                android:id="@+id/signBTN"
                 android:layout_width="200dp"
 
 
