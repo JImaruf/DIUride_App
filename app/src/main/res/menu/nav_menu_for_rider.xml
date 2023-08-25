@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:iconTint="@color/white"
+        android:id="@+id/offerride"
+        android:title="Offer a Ride"
+        android:icon="@drawable/ridelisticon"
+
+
+        >
+
+
+    </item>
+    <item
+        android:id="@+id/navnotification"
+        android:iconTint="@color/white"
+        android:title="Notification"
+        android:icon="@drawable/notification"
+
+
+        >
+
+
+    </item>
+
+
+
+
+
+
+
+</menu>
