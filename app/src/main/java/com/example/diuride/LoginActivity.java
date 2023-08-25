@@ -14,6 +14,7 @@ import com.example.diuride.databinding.ActivityRegBinding;
 
 public class LoginActivity extends AppCompatActivity {
     ActivityLoginBinding binding;
+    String userType = "passenger";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +27,16 @@ public class LoginActivity extends AppCompatActivity {
         binding.loginBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginActivity.this,MainActivity.class));
+                if(userType.equals("passenger"))
+                {
+                    startActivity(new Intent(LoginActivity.this,MainActivity.class));
+                }
+                else if(userType.equals("rider"))
+                {
+                    startActivity(new Intent(LoginActivity.this,MainActivity2.class));
+
+                }
+
             }
         });
 
@@ -51,6 +61,7 @@ public class LoginActivity extends AppCompatActivity {
             if (checked)
             {
                 Toast.makeText(this, "passenger", Toast.LENGTH_SHORT).show();
+                userType= "passenger";
 
             }
 
@@ -59,6 +70,7 @@ public class LoginActivity extends AppCompatActivity {
             if (checked)
             {
                 Toast.makeText(this, "rider.", Toast.LENGTH_SHORT).show();
+                userType= "rider";
             }
         }
     }

@@ -24,7 +24,25 @@ public class RegActivity extends AppCompatActivity {
         binding.backlinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 startActivity(new Intent(RegActivity.this,WelcomeActivity.class));
+            }
+        });
+
+        binding.signBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                email = binding.emailet.getText().toString();
+
+                String checkuvdom = "@diu.edu.bd";
+                int size = email.length();
+                String currentDom = email.substring(email.indexOf("@"),size);
+                if(!checkuvdom.equals(currentDom))
+                {
+                    Toast.makeText(RegActivity.this, "Use DIU Varsity mail ", Toast.LENGTH_SHORT).show();
+
+                }
+
             }
         });
 
