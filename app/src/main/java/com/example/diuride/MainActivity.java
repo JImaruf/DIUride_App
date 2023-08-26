@@ -55,47 +55,6 @@ public class MainActivity extends AppCompatActivity {
         ft.commit();
 
 
-
-
-
-
-
-//        binding.navbarID.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//               int id = view.getId();
-//                if (id == R.id.navhome) {
-//                    FragmentManager fm = getSupportFragmentManager();
-//                    FragmentTransaction ft = fm.beginTransaction();
-//
-//                    ft.replace(R.id.fragmentcontainer, new MapsFragment());
-//                    ft.commit();
-//
-//                    Toast.makeText(MainActivityForPassenger.this, "home", Toast.LENGTH_SHORT).show();
-//                } else if (id == R.id.navnotification) {
-//                    FragmentManager fm = getSupportFragmentManager();
-//                    FragmentTransaction ft = fm.beginTransaction();
-//
-//                    ft.replace(R.id.fragmentcontainer, new NotificationFragment());
-//                    ft.commit();
-//
-//                    Toast.makeText(MainActivityForPassenger.this, "notification", Toast.LENGTH_SHORT).show();
-//                } else if (id == R.id.rList) {
-//                    FragmentManager fm = getSupportFragmentManager();
-//                    FragmentTransaction ft = fm.beginTransaction();
-//
-//                    ft.replace(R.id.fragmentcontainer, new OfferFragment());
-//                    ft.commit();
-//                    Toast.makeText(MainActivityForPassenger.this, "Team", Toast.LENGTH_SHORT).show();
-//                } else {
-//                    Toast.makeText(MainActivityForPassenger.this, "default", Toast.LENGTH_SHORT).show();
-//                }
-//            }
-//        });
-
-
-
-
         binding.navbarid.setOnItemSelectedListener(new OnItemSelectedListener() {
             @Override
             public boolean onItemSelect(int i) {

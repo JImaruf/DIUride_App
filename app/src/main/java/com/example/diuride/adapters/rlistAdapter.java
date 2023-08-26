@@ -1,4 +1,4 @@
-package com.example.diuride;
+package com.example.diuride.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.diuride.R;
+import com.example.diuride.RlistModel;
 import com.makeramen.roundedimageview.RoundedImageView;
 
 import java.util.List;

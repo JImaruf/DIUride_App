@@ -4,7 +4,7 @@ public class RlistModel {
 
     String Rname;
     String destination;
-    int rDP;
+    public int rDP;
     String rPrice;
     String rTime;
 

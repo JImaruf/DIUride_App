@@ -121,7 +121,7 @@
                 android:layout_height="wrap_content">
 
                 <EditText
-                    android:id="@+id/priceet"
+                    android:id="@+id/passet"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/editback"
@@ -164,7 +164,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
-
+                    android:id="@+id/radiogroup"
 
                     android:orientation="horizontal"
                     app:layout_constraintBottom_toBottomOf="parent"
