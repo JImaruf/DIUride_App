@@ -4,12 +4,11 @@
 
 
 
-
     <item
         android:iconTint="@color/white"
-        android:id="@+id/rHistory"
-        android:title="History"
-        android:icon="@drawable/profileicon"
+        android:id="@+id/editProfile"
+        android:title="Profile"
+        android:icon="@drawable/personlogo"
 
 
         >
@@ -18,12 +17,25 @@
     </item>
 
 
+<!--    <item-->
+<!--        android:iconTint="@color/white"-->
+<!--        android:id="@+id/rHistory"-->
+<!--        android:title="History"-->
+<!--        android:icon="@drawable/historyicon"-->
+
+
+<!--        >-->
+
+
+<!--    </item>-->
+
+
 
     <item
         android:iconTint="@color/white"
-        android:id="@+id/settings"
-        android:title="Settings"
-        android:icon="@drawable/settingicon"
+        android:id="@+id/ongoingride"
+        android:title="On Going Ride"
+        android:icon="@drawable/baseline_directions_bike_24"
 
 
         >
@@ -51,5 +63,7 @@
 
 
     </item>
+
+
 
 </menu>

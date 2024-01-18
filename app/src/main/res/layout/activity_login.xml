@@ -6,13 +6,12 @@
     android:layout_height="match_parent"
     android:background="#D8F6D3"
 
-    tools:context=".RegActivity">
+    tools:context=".LoginActivity">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/mainlayoutt"
         android:layout_width="match_parent"
-
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,18 +50,18 @@
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/signuplogo"
+            android:id="@+id/loginlogo"
             android:layout_width="150dp"
-            android:layout_height="280dp"
+            android:layout_height="200dp"
             android:src="@drawable/loginicon"
-            app:layout_constraintBottom_toTopOf="@+id/textView7"
+            app:layout_constraintBottom_toTopOf="@+id/tv1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/backklinearLayout" />
 
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/tv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -73,7 +72,7 @@
             app:layout_constraintEnd_toEndOf="parent"
 
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/signuplogo" />
+            app:layout_constraintTop_toBottomOf="@id/loginlogo" />
 
 
         <LinearLayout
@@ -81,13 +80,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="20dp"
             android:orientation="vertical"
-            app:layout_constraintBottom_toTopOf="@+id/loginBTN"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView7">
+            app:layout_constraintTop_toBottomOf="@+id/tv1">
 
 
             <soup.neumorphism.NeumorphCardView
@@ -100,11 +98,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/editback"
-                    android:drawableLeft="@drawable/baseline_email_24"
+                    android:drawableStart="@drawable/baseline_email_24"
                     android:gravity="center"
                     android:hint="Enter DIU Email"
 
-                    android:inputType="text"
+                    android:inputType="textEmailAddress"
                     android:padding="15dp"
                     android:textColorHint="#706868"
 
@@ -125,7 +123,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/editback"
-                    android:drawableLeft="@drawable/baseline_password_24"
+                    android:drawableStart="@drawable/baseline_password_24"
                     android:gravity="center"
                     android:hint="Enter Password"
 
@@ -138,14 +136,28 @@
 
             </soup.neumorphism.NeumorphCardView>
 
+            <TextView
+                android:id="@+id/forgotbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="Forgot Password?"
+                android:layout_marginEnd="16dp"
+                android:textColor="#CD0451A8"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold" />
+
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
                 android:layout_marginStart="20dp"
+                android:text="Log in as:"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
                 android:textColor="#063507"
-                android:text="Log in as:"/>
+                android:textSize="18sp" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/usertypebutton"
@@ -153,18 +165,13 @@
                 android:layout_height="70dp"
 
 
-
-
-
-
-
                 >
 
                 <RadioGroup
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
                     android:id="@+id/radiogroup"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
 
                     android:orientation="horizontal"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -174,27 +181,29 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <RadioButton
-                        android:padding="10dp"
                         android:id="@+id/passengerRbtn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:drawableLeft="@drawable/personlogo"
+                        android:drawableStart="@drawable/personlogo"
                         android:onClick="onRadioButtonClicked"
-                        android:textSize="16sp"
-                        android:text="Passenger" />
+                        android:padding="10dp"
+                        android:text="Passenger"
+                        android:textSize="16sp" />
 
                     <RadioButton
-                        android:padding="10dp"
                         android:id="@+id/riderRbtn"
-
                         android:layout_width="wrap_content"
+
                         android:layout_height="wrap_content"
                         android:drawableLeft="@drawable/baseline_directions_bike_24"
-
                         android:onClick="onRadioButtonClicked"
-                       android:textSize="16sp"
-                        android:text="Rider" />
+
+                        android:padding="10dp"
+                        android:text="Rider"
+                        android:textSize="16sp" />
                 </RadioGroup>
+
+
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -202,26 +211,39 @@
 
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/loginToregbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/poppins"
+            android:text="New Here? Create an account"
+            android:textColor="#CD0451A8"
+
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
 
         <soup.neumorphism.NeumorphButton
             android:id="@+id/loginBTN"
             android:layout_width="200dp"
-
 
             android:layout_height="65dp"
             android:layout_marginBottom="24dp"
             android:gravity="center"
             android:text="Log In"
             android:textColor="@color/white"
-
-
             android:textSize="18sp"
-
-
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginToregbtn"
             app:neumorph_backgroundColor="#1D9C6B"
             app:neumorph_inset="6dp"
             app:neumorph_shadowColorDark="#379571"
@@ -230,23 +252,6 @@
 
 
         </soup.neumorphism.NeumorphButton>
-
-        <!--            <Button-->
-        <!--                android:id="@+id/signup"-->
-        <!--                style="@style/Theme.MyApp"-->
-        <!--                android:layout_width="150dp"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:layout_marginTop="20dp"-->
-        <!--                android:background="@drawable/buttonloginshape"-->
-        <!--                android:fontFamily="@font/poppins"-->
-        <!--                android:text="Sign up"-->
-        <!--                android:textSize="16sp"-->
-        <!--                android:textStyle="bold"-->
-        <!--                app:layout_constraintEnd_toEndOf="parent"-->
-        <!--                app:layout_constraintStart_toStartOf="parent"-->
-        <!--                app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />-->
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

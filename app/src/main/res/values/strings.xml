@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">DIUride</string>
+    <string name="MapAPIKey">AIzaSyApl3I1wwymJg1Y_XvJDGwzEDuPsOIfitg</string>
+    <string name="FCMServerKey">AAAAjbLZsuo:APA91bHLRoDg119ZCSEyk3h4QzsKRENMXi72Qk1Y80Hb7_RdSVGDbQ7t4H_gUVK_FD1VXMTlB9DXkaBouL5MEOBIDu-zD21OtVz_4m5P9RzUa0mCvszE9VwhQaQ0A7i1ZzzhV3CzRkGd</string>
 
 
     <string name="regTv">
@@ -8,4 +10,6 @@
         Hello There! <br><b>Log In to Your Account.</b></br></string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_user_polyline">UserPolylineActivity</string>
+    <string name="title_activity_user_polyline2">UserPolylineActivity2</string>
 </resources>

@@ -16,21 +16,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
         >
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.makeramen.roundedimageview.RoundedImageView
-        android:id="@+id/rDp"
+        android:id="@+id/userDp"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_gravity="center"
         android:background="@color/lightgrey"
         android:padding="5dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/maruf"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        android:src="@drawable/profilesvg"
+        app:layout_constraintBottom_toTopOf="@+id/drawerUname"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.149"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,7 +39,7 @@
         app:riv_oval="true" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/drawerUname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -50,12 +49,12 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.187"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/userDp"
+        app:layout_constraintStart_toStartOf="@+id/userDp"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <TextView
+        android:id="@+id/drawerUdiuID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="3dp"
@@ -64,10 +63,9 @@
         android:textColor="@color/accent_color"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/liner"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.24"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="@+id/userDp"
+        app:layout_constraintStart_toStartOf="@+id/userDp"
+        app:layout_constraintTop_toBottomOf="@+id/drawerUname"
         app:layout_constraintVertical_bias="1.0" />
 
     <LinearLayout

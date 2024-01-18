@@ -7,6 +7,16 @@
     android:background="@color/mainactivityback"
     tools:context=".MainActivity">
 
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/_80sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 
 
@@ -39,9 +49,10 @@
                 <ImageView
 
 
-                    android:id="@+id/navmenubtn"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:id="@+id/drawermenubtn"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -49,13 +60,14 @@
 
 
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/diuridelogo"
+                    android:layout_width="@dimen/_85sdp"
                     android:layout_height="match_parent"
                     android:src="@drawable/diulogo"
 
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/rDp"
-                    app:layout_constraintStart_toEndOf="@+id/navmenubtn"
+                    app:layout_constraintEnd_toStartOf="@+id/userDp"
+                    app:layout_constraintStart_toEndOf="@+id/drawermenubtn"
                     app:layout_constraintTop_toTopOf="parent" />
 
 
@@ -66,18 +78,18 @@
                 <com.makeramen.roundedimageview.RoundedImageView
                     app:riv_mutate_background="true"
                     app:riv_oval="true"
-                    android:id="@+id/rDp"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:id="@+id/userDp"
+                    android:layout_width="@dimen/_42sdp"
+                    android:layout_height="@dimen/_42sdp"
                     android:layout_gravity="center"
-                    android:background="@color/maincolor"
+                    android:background="@color/accent_color"
                     android:padding="2dp"
+                    android:src="@drawable/profilesvg"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/maruf"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/profilesvg" />
+                   />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 

@@ -10,10 +10,14 @@ import android.view.View;
 import android.view.WindowManager;
 
 import com.example.diuride.databinding.ActivityWelcomeBinding;
+import com.google.firebase.auth.FirebaseAuth;
+
+import java.util.Objects;
 
 public class WelcomeActivity extends AppCompatActivity {
 
     ActivityWelcomeBinding binding;
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,12 +27,13 @@ public class WelcomeActivity extends AppCompatActivity {
         binding = ActivityWelcomeBinding.inflate(getLayoutInflater());
 
         setContentView(binding.getRoot());
-
-
+        getWindow().setNavigationBarColor(Color.parseColor("#52C498"));
+        getWindow().setStatusBarColor(Color.parseColor("#52C498"));
         binding.regbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(WelcomeActivity.this,RegActivity.class));
+                finish();
             }
         });
 
@@ -36,6 +41,7 @@ public class WelcomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(WelcomeActivity.this,LoginActivity.class));
+                finish();
             }
         });
 

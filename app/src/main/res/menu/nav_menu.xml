@@ -16,17 +16,17 @@
 
 
     </item>
-    <item
-        android:id="@+id/navnotification"
-        android:iconTint="@color/white"
-        android:title="Notification"
-        android:icon="@drawable/notification"
+<!--    <item-->
+<!--        android:id="@+id/navnotification"-->
+<!--        android:iconTint="@color/white"-->
+<!--        android:title="Notification"-->
+<!--        android:icon="@drawable/notification"-->
 
 
-        >
+<!--        >-->
 
 
-    </item>
+<!--    </item>-->
 
 
 
@@ -41,6 +41,7 @@
 
 
     </item>
+
 
 
 
