@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+          android:id="@+id/notification_rider_container"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginTop="5dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="15dp"
+
+        >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <TextView
+            android:id="@+id/startpoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ride Offer Accepted"
+            android:textColor="#5A5A5A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pDP"
+            app:layout_constraintTop_toTopOf="parent" />
+
+<!--        <soup.neumorphism.NeumorphButton-->
+<!--            android:id="@+id/cancelRideBTN"-->
+<!--            android:layout_width="@dimen/_90sdp"-->
+
+
+<!--            android:layout_height="@dimen/_40sdp"-->
+
+<!--            android:layout_marginEnd="32dp"-->
+<!--            android:gravity="center"-->
+
+
+<!--            android:text="Cancel Ride"-->
+
+
+<!--            android:textColor="#F10F0F"-->
+
+
+<!--            android:textStyle="bold"-->
+
+
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+
+
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+
+<!--            app:layout_constraintTop_toBottomOf="@+id/destination"-->
+<!--            app:neumorph_inset="6dp">-->
+
+
+<!--        </soup.neumorphism.NeumorphButton>-->
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/getPassBTN"
+            android:layout_width="@dimen/_90sdp"
+
+
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Tap Here"
+
+
+            android:textColor="#FF6F00"
+
+
+            android:textStyle="bold"
+
+
+            app:layout_constraintBottom_toBottomOf="parent"
+
+
+            app:layout_constraintEnd_toEndOf="@+id/startpoint"
+            app:layout_constraintStart_toStartOf="@+id/startpoint"
+            app:layout_constraintTop_toBottomOf="@+id/startpoint"
+            app:neumorph_inset="6dp">
+
+
+        </soup.neumorphism.NeumorphButton>
+
+
+
+
+
+        <TextView
+            android:id="@+id/passName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textAlignment="center"
+            android:gravity="center"
+
+
+
+            android:text="Maruf"
+            android:textColor="#5A5A5A"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/pDP"
+            app:layout_constraintStart_toStartOf="@+id/pDP"
+            app:layout_constraintTop_toBottomOf="@+id/pDP" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/pDP"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:background="@color/maincolor"
+
+            android:padding="3dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profilesvg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_mutate_background="true"
+            app:riv_oval="true" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+

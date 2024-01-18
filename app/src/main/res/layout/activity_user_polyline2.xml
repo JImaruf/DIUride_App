@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/maincolor"
+    tools:context=".UserPolylineActivity2" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/topBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                map:layout_constraintLeft_toLeftOf="parent"
+                map:layout_constraintRight_toRightOf="parent"
+                map:layout_constraintTop_toTopOf="parent"
+                >
+                <ImageView
+                    android:id="@+id/callIcon"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/btn_back_rec"
+                    android:src="@android:drawable/stat_sys_phone_call"
+                    map:layout_constraintBottom_toBottomOf="parent"
+                    map:layout_constraintStart_toStartOf="parent"
+                    map:layout_constraintTop_toTopOf="parent" />
+
+                <soup.neumorphism.NeumorphButton
+                    android:id="@+id/cancelRideButton"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:gravity="center"
+                    android:text="Cancel Ride"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold"
+                    map:layout_constraintBottom_toBottomOf="parent"
+                    map:layout_constraintEnd_toEndOf="parent"
+                    map:layout_constraintTop_toTopOf="parent"
+                    map:neumorph_backgroundColor="#9C1D1D"
+                    map:neumorph_inset="6dp"
+                    map:neumorph_shadowColorDark="#953737"
+                    map:neumorph_shadowColorLight="#702727"
+                    map:neumorph_shapeType="pressed">
+
+
+                </soup.neumorphism.NeumorphButton>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                map:layout_constraintBottom_toTopOf="@id/bottomlayer"
+                map:layout_constraintEnd_toEndOf="parent"
+                map:layout_constraintStart_toStartOf="parent"
+                map:layout_constraintTop_toBottomOf="@+id/topBar">
+
+
+
+
+            </fragment>
+
+
+
+
+            <LinearLayout
+
+                android:id="@+id/bottomlayer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/maincolor"
+                android:orientation="vertical"
+                map:layout_constraintBottom_toBottomOf="parent"
+                map:layout_constraintEnd_toEndOf="parent"
+                map:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Do You Find the Passenger?"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16ssp" />
+
+                <Button
+                    android:id="@+id/PassengerFoundBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Yes"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
