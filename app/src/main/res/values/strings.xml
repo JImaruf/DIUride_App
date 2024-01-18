@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">DIUride</string>
-    <string name="MapAPIKey">AIzaSyApl3I1wwymJg1Y_XvJDGwzEDuPsOIfitg</string>
-    <string name="FCMServerKey">AAAAjbLZsuo:APA91bHLRoDg119ZCSEyk3h4QzsKRENMXi72Qk1Y80Hb7_RdSVGDbQ7t4H_gUVK_FD1VXMTlB9DXkaBouL5MEOBIDu-zD21OtVz_4m5P9RzUa0mCvszE9VwhQaQ0A7i1ZzzhV3CzRkGd</string>
+    <string name="MapAPIKey">"your map API key"</string>
+    <string name="FCMServerKey">"your fcm serverkey"</string>
 
 
     <string name="regTv">
