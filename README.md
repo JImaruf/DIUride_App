@@ -14,9 +14,10 @@ while heading to his destination, he will share the journey for considerably les
 And travelers may have a seamless and easy ride. The rider can earn some money with 
 this ride sharing app. And finally this system will boost the relationship between student 
 in the campus and save their valuable time.
+# Project Screen Shots
 
-#Project Screen Shots
-![Screenshot_70](https://github.com/JImaruf/DIUride_App/assets/95274187/596a087a-d73a-4089-ab5e-33295c16cd1a) ![Screenshot_72](https://github.com/JImaruf/DIUride_App/assets/95274187/126339ee-90d4-4385-85af-f86824997ace)
+![Screenshot_70](https://github.com/JImaruf/DIUride_App/assets/95274187/596a087a-d73a-4089-ab5e-33295c16cd1a) 
+![Screenshot_72](https://github.com/JImaruf/DIUride_App/assets/95274187/126339ee-90d4-4385-85af-f86824997ace)
 ![Screenshot_73](https://github.com/JImaruf/DIUride_App/assets/95274187/c2bf3c48-dc9e-449e-b01a-0ad7d935e418)
 ![Screenshot_74](https://github.com/JImaruf/DIUride_App/assets/95274187/fd91e307-68bc-4a40-9f1d-9e2f9abb7229)
 ![Screenshot_116](https://github.com/JImaruf/DIUride_App/assets/95274187/4b4a6916-dc3a-41f2-a8f8-a95fb66765e6)
